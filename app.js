@@ -2,8 +2,10 @@ import express from 'express';
 const app = express()
 const port = 3000
 
+
 app.use(express.static('public'))
 
+// dichiaro l'array di oggetti che contengono le informazioni
 const posts = [
     {
         title: 'Ciambellone della nonna',
@@ -37,10 +39,12 @@ const posts = [
     }
 ];
 
+// imposto la rotta principale
 app.get('/', (req, res) => {
     res.send('<h1>Server del mio blog</h1>');
 })
 
+// imposto la rotta secondaria
 app.get('/bacheca', (req, res) => {
     res.json(posts);
 })
