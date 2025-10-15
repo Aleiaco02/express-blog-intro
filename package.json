@@ -1,0 +1,17 @@
+{
+  "name": "express-blog-intro",
+  "version": "1.0.0",
+  "description": "lc148",
+  "license": "ISC",
+  "author": "alessandro iacovelli",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
